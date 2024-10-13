@@ -1,0 +1,41 @@
+<div className="p-5 max-w-3xl mx-auto bg-gray-100 rounded-2xl shadow-lg">
+<div className="grid grid-cols-3 ">
+  <div className="col-span-2 relative">
+    <img
+      src="./Assets/Asset_1.jpg"
+      alt="Flamingo"
+      className="w-full h-full object-cover rounded-xl"
+    />
+  </div>
+
+  {/* Stats Cards */}
+  <div className="flex flex-col ">
+    {/* Projects */}
+    <div className="p-4 bg-teal-200 rounded-xl text-center">
+      <h2 className="text-4xl font-bold">251</h2>
+      <p className="text-gray-700">Projects</p>
+    </div>
+
+    {/* Case Study */}
+    <div className="p-4 bg-purple-400 rounded-xl text-center">
+      <h2 className="text-4xl font-bold">156</h2>
+      <p className="text-white">Case Study</p>
+    </div>
+  </div>
+
+  {/* Clients and Awards */}
+  <div className="flex flex-col ">
+    {/* Clients */}
+    <div className="p-4 bg-gray-800 rounded-xl flex items-center justify-center">
+      <i className="text-white text-6xl">🍏</i> {/* Apple Logo */}
+      <p className="text-white mt-2">Clients</p>
+    </div>
+
+    {/* Awards */}
+    <div className="p-4 bg-yellow-400 rounded-xl text-center">
+      <h2 className="text-4xl font-bold">172</h2>
+      <p className="text-black">Awards</p>
+    </div>
+  </div>
+</div>
+</div>

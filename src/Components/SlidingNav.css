@@ -1,0 +1,23 @@
+.sliding-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px; /* Adjust width as needed */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); /* Start off-screen to the right */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 1000; /* Ensure it is on top */
+}
+
+.sliding-nav.open {
+  transform: translateX(0); /* Slide in */
+}
+
+.sliding-nav.closed {
+  transform: translateX(100%); /* Slide out */
+}
