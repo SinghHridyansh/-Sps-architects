@@ -4,7 +4,7 @@ import ProudToWork from "../Components/ProudToWork";
 import Testimonials from "../Components/Testimonials";
 import Contact from "../Components/Contact";
 import Hero_Main from "../Components/Hero_Main";
-import Divider from "../Components/divider";
+import Divider from "../Components/Divider";
 
 const Home = () => {
   return (
