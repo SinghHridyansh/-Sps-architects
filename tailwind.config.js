@@ -5,6 +5,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      flexGrow: {
+        1: "1",
+        2: "2",
+        5: "5",
+      },
       colors: {
         "project-yellow": "#ffd700",
         "project-blue": "#87ceeb",

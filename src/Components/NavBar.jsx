@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const NavBar = ({ navOpen }) => {
+const NavBar = ({ navOpen, setNavOpen }) => {
   const lastActiveLink = useRef();
   const activeBox = useRef();
 
@@ -27,6 +27,8 @@ const NavBar = ({ navOpen }) => {
     activeBox.current.style.left = e.target.offsetLeft + "px";
     activeBox.current.style.width = e.target.offsetWidth + "px";
     activeBox.current.style.height = e.target.offsetHeight + "px";
+
+    setNavOpen(false);
   };
 
   const navItems = [

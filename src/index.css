@@ -106,3 +106,14 @@ body {
 .ProudImage {
   @apply h-12 flex-none md:h-20;
 }
+.CardNormal {
+  flex-grow: 1;
+}
+
+.CardExpand {
+  flex-grow: 5;
+}
+
+.CardNormal span {
+  font-size: 0px;
+}

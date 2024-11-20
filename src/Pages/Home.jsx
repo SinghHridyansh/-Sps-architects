@@ -5,13 +5,17 @@ import Testimonials from "../Components/Testimonials";
 import Contact from "../Components/Contact";
 import Hero_Main from "../Components/Hero_Main";
 import Divider from "../Components/Divider";
+import NewHero from "../Components/NewHero";
+import ExplandableCards from "../Components/ExplandableCards";
 
 const Home = () => {
   return (
     <div className="w-full h-screen">
-      <Hero_Main />
-      <Divider />
+      <NewHero />
+      {/* <Hero_Main /> */}
+      {/* <Divider /> */}
       <Hero />
+      <ExplandableCards />
       <ProudToWork />
       <Testimonials />
       <Contact />
