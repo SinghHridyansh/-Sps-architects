@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <div className="w-full min-h-screen  flex  items-center flex-col ">
       {/* Contact Main section */}
-      <section className="w-full h-screen p-8 md:p-10  flex  items-center justify-center flex-col gap-6 md:gap-10 bg-ContactImage bg-cover ">
+      <section className="w-full h-screen p-8 md:p-10  flex  items-center justify-center flex-col gap-6 md:gap-10 bg-gray-900 bg-cover ">
         <div className="flex justify-center items-center flex-col gap-2">
           <h1 className=" text-project-yellow text-5xl md:text-7xl lg:text-9xl text-center font-extrabold">
             SPS ARCHITECTS
