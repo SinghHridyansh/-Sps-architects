@@ -16,6 +16,9 @@ export default {
         "project-gray": "#e5e5e5",
         "project-purple": "#8184d2",
       },
+      backgroundImage: {
+        ContactImage: "url('./Assets/ContactImage.webp')",
+      },
     },
   },
   plugins: [tailwindScrollbar],

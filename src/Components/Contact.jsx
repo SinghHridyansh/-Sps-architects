@@ -73,8 +73,8 @@ const Contact = () => {
       <div className="flex flex-col-reverse gap-12 md:flex-row md:justify-between md:mt-8 md:gap-1">
         {/* Address */}
         <div className="address flex gap-2 flex-col text-sm tracking-wider md:w-1/4 md:gap-6 md:font-semibold ">
-          <p>INFO@MYSITE.COM</p>
-          <p>123-456-7890</p>
+          <p>founder@spsarchitects.in</p>
+          <p>+91-9565785865</p>
           <p>
             D-34 VIBHUTI KHAND,
             <br /> LUCKNOW
@@ -170,7 +170,7 @@ const Contact = () => {
                     autoComplete="name"
                     required
                     className="text-field mt-2"
-                    placeholder="John Prasad"
+                    placeholder="Your name"
                   />
                 </div>
               </div>
@@ -200,7 +200,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Type+ your message here"
+                    placeholder="Type your message here"
                     required
                     className="text-field  resize-y min-h-32 max-h-80"
                   ></textarea>

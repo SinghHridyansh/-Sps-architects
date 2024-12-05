@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screenh-screen  flex  items-center flex-col ">
+    <div className="w-full min-h-screen  flex  items-center flex-col ">
       {/* Contact Main section */}
-      <section className="w-full h-screen p-8 md:p-10  flex  items-center justify-center flex-col gap-6 md:gap-10 bg-zinc-800 ">
+      <section className="w-full h-screen p-8 md:p-10  flex  items-center justify-center flex-col gap-6 md:gap-10 bg-ContactImage bg-cover ">
         <div className="flex justify-center items-center flex-col gap-2">
           <h1 className=" text-project-yellow text-5xl md:text-7xl lg:text-9xl text-center font-extrabold">
             SPS ARCHITECTS
@@ -26,19 +26,19 @@ const ContactPage = () => {
 
       {/* Address Section */}
       <section className="w-full h-max py-16 px-8 md:p-10 lg:py-24 bg-black  flex  items-center justify-center flex-col lg:flex-row gap-8 ">
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 ">
           <h1 className="text-3xl md:text-6xl lg:text-8xl font-semibold">
             D-34 VIBHUTI KHAND, LUCKNOW
           </h1>
         </div>
-        <div className="lg:w-1/3 w-full text-project-yellow flex justify-between items-center lg:flex-col lg:gap-8">
-          <span className="text-lg md:text-xl">
+        <div className="lg:w-1/3 w-full text-project-yellow flex justify-between items-center  lg:flex-col lg:gap-8 ">
+          <span className="text-base md:text-xl w-30   lg:w-60 ">
             Hours <br /> Monday-Friday <br /> 10am-6pm
           </span>
-          <span className="text-lg md:text-xl text-right lg:text-left">
+          <span className="text-base md:text-xl text-right lg:text-left w-30  lg:w-60 ">
             Phone
             <br />
-            (555)555-555
+            +91-9565785865
           </span>
         </div>
       </section>

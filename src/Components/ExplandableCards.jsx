@@ -20,27 +20,35 @@ const ExplandableCards = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full h-max bg-gray-300 gap-4 md:gap-2 px-8 py-10  ">
-      {cardData.map((card) => (
-        <div
-          key={card.id}
-          className={`relative lg:h-96 flex ${
-            expandedCard === card.id ? "CardExpand" : "CardNormal fontZero"
-          } transition-all duration-500 ease-in-out bg-gray-800 rounded-lg overflow-hidden cursor-pointer`}
-          style={{
-            backgroundImage: `url(${card.imgSource})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          onClick={() => handleCardClick(card.id)}
-        >
-          <div className="absolute bottom-5 left-5">
-            <span className="text-white text-sm md:text-lg lg:text-2xl font-semibold">
-              {card.title}
-            </span>
+    <div className="bg-gray-300 w-full h-max px-8 py-10 flex justify-center flex-col gap-7 md:gap-20">
+      <div className="flex justify-center items-center flex-col gap-2 ">
+        {/* <p className="font-medium text-sm md:text-lg">AMONG OUR CLIENTS</p> */}
+        <h2 className="text-2xl font-semibold md:text-5xl text-black">
+          GALLERY
+        </h2>
+      </div>
+      <div className="flex md:flex-row w-full h-max  gap-1 md:gap-2   ">
+        {cardData.map((card) => (
+          <div
+            key={card.id}
+            className={`relative h-60 lg:h-96 flex ${
+              expandedCard === card.id ? "CardExpand" : "CardNormal fontZero"
+            } transition-all duration-500 ease-in-out bg-gray-800 rounded-lg overflow-hidden cursor-pointer`}
+            style={{
+              backgroundImage: `url(${card.imgSource})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            onClick={() => handleCardClick(card.id)}
+          >
+            <div className="absolute bottom-5 left-5">
+              <span className="text-white text-sm md:text-lg lg:text-2xl font-semibold">
+                {card.title}
+              </span>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

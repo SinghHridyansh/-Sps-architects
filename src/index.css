@@ -104,16 +104,30 @@ body {
   @apply text-sm font-semibold;
 }
 .ProudImage {
-  @apply h-12 flex-none md:h-20;
+  @apply h-16 w-auto flex-none md:h-20 lg:h-28;
 }
 .CardNormal {
   flex-grow: 1;
 }
 
 .CardExpand {
-  flex-grow: 5;
+  flex-grow: 20;
+}
+
+@media screen and (min-width: 768px) {
+  .CardExpand {
+    flex-grow: 5;
+  }
 }
 
 .CardNormal span {
   font-size: 0px;
+}
+
+.expertiseHeading {
+  @apply text-xl md:text-3xl lg:text-5xl leading-tight  md:leading-tight;
+}
+
+.expertisePoints {
+  @apply text-xs md:text-xl font-light lg:text-xl mt-3 md:mt-4 lg:mt-6;
 }
