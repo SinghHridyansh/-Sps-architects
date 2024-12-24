@@ -150,7 +150,7 @@ const Studio = () => {
             </span>
           </div>
 
-          <div className="images py-8 flex flex-col justify-center items-center gap-10 mt-8 md:mt-12 md:justify-evenly md:flex-row md:flex-wrap">
+          {/* <div className="images py-8 flex flex-col justify-center items-center gap-10 mt-8 md:mt-12 md:justify-evenly md:flex-row md:flex-wrap">
             {team.map((member) => (
               <TeamCard
                 name={member.name}
@@ -159,7 +159,7 @@ const Studio = () => {
                 imageUrl={member.imageUrl}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 

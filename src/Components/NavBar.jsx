@@ -43,11 +43,11 @@ const NavBar = ({ navOpen, setNavOpen }) => {
       link: "/studio",
       className: "nav-link",
     },
-    {
-      label: "Work",
-      link: "/work",
-      className: "nav-link",
-    },
+    // {
+    //   label: "Work",
+    //   link: "/work",
+    //   className: "nav-link",
+    // },
 
     {
       label: "Contact",
